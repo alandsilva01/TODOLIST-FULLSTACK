@@ -8,16 +8,24 @@
 }
 
 body {
-  background-color: #0099FF;
+  background-image: url(../img/backtodo2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 main {
-  background-color: #FFF;
+  background-color:rgba(240, 246, 250, 0.199);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(240, 246, 250, 0.733);
   border-radius: 8px;
   padding: 20px;
   width: 90%;
   margin: 40px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.568);
 }
 
 .add-form {
@@ -31,7 +39,7 @@ input {
   width: 100%;
   flex: 1;
   padding: 15px;
-  border: 1px solid #DDD;
+  border: 1px solid rgba(114, 113, 113, 0.438);
   border-radius: 5px;
   outline: none;
   font-size: 1rem;
@@ -39,7 +47,7 @@ input {
 }
 
 button[type="submit"] {
-  background-color: #0099FF;
+  background-color: #0099ff;
   height: 50px;
   width: 50px;
   border: none;
@@ -60,7 +68,7 @@ table {
 
 td, th {
   padding: 10px 15px;
-  border: 1px solid #DDD;
+  border: 1px solid rgba(114, 113, 113, 0.438);
   text-align: center;
 }
 
@@ -105,4 +113,48 @@ select:hover {
 
 .btn-action:nth-child(2) {
   background-color: rgba(237, 42, 42, 0.9);
+}
+
+.conteudo {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.192));
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.815);
+  max-width: 450px;
+  height: 130px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 999;
+
+}
+
+.conteudo .relogio,
+.conteudo span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.conteudo .relogio {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.425));
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  width: 430px;
+  height: 110px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  
+}
+
+.conteudo .relogio h4 {
+  background: white;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
